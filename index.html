@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serghei Prisacaru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #fafafa;
+      --text: #1a1a1a;
+      --muted: #666;
+      --accent: #2563eb;
+      --border: #e5e5e5;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111;
+        --text: #e5e5e5;
+        --muted: #999;
+        --accent: #60a5fa;
+        --border: #2a2a2a;
+      }
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 80px 24px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .tagline {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 0.6875rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li { margin-bottom: 12px; }
+
+    li a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+
+    li a:hover { color: var(--accent); }
+
+    li span {
+      display: block;
+      font-size: 0.8125rem;
+      color: var(--muted);
+      font-weight: 400;
+      margin-top: 2px;
+    }
+
+    .links {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 20px;
+    }
+
+    .links a {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .links a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+  <h1>Serghei Prisacaru</h1>
+  <p class="tagline">Software engineer</p>
+
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <a href="https://www.serghei.eu" target="_blank" rel="noopener">serghei.eu</a>
+      <span>Personal projects and experiments</span>
+    </li>
+    <li>
+      <a href="https://github.com/prisacaru/hackathon-mango" target="_blank" rel="noopener">hackathon-mango</a>
+      <span>AI hackathon project &middot; Python</span>
+    </li>
+  </ul>
+
+  <div class="links">
+    <a href="https://github.com/prisacaru" target="_blank" rel="noopener">GitHub</a>
+    <a href="mailto:serghei.prisacaru@gmail.com">Email</a>
+  </div>
+</body>
+</html>
